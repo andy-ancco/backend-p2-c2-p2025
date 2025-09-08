@@ -1,23 +1,29 @@
 <head>
     <title>
         {% block title %}
+
          {% endblock %}
     </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <header>
+    <header class="bg-blue-600 text-white p-4">
         {% block header %}
         {% endblock  %}
     </header>
+    
     <nav>
         {% block breadcrumb %}
         {% endblock  %}
     </nav>
+    
     <main>
         {% block content %}
         {% endblock  %}
     </main>
-    <footer>
+    
+    <footer class="bg-violete-400">
         {% block footer%}
         {% endblock  %}
     </footer>
